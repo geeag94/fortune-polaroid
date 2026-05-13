@@ -1,6 +1,7 @@
 import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Download, RotateCcw } from 'lucide-react';
+import cameraImg from './assets/camera.png';
 import PolaroidFrame from './components/PolaroidFrame';
 import ReactionLog from './components/ReactionLog';
 import HistoryGallery from './components/HistoryGallery';
@@ -23,7 +24,7 @@ function Camera636({ onClick, isPressed }: { onClick: () => void; isPressed: boo
       onClick={onClick}
     >
       <img
-        src="/images/camera.png"
+        src={cameraImg}
         alt="Polaroid 636 CloseUp"
         className="w-[720px] h-auto object-contain"
         style={{
